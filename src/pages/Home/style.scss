@@ -1,0 +1,43 @@
+:local {
+
+  .hero {
+    margin: 0 auto;
+    padding: 100px 0 10px 0;
+    width: 1000px;
+  }
+
+  .intro {
+    float: left;
+    width: 60%;
+
+    h1 {
+      font-size: 55px;
+      line-height: 100px;
+      padding-bottom: 32px;
+
+      color: #142127;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 50px;
+    }
+  }
+
+  .intro_image {
+    float: right;
+    width: calc(40% - 64px);
+    height: 400px;
+    padding: 32px;
+
+    .image {
+      background: url('src/intro.jpg') no-repeat 0px 0px;
+      background-size: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+}

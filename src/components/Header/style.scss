@@ -24,6 +24,7 @@
 
     position: fixed;
     box-shadow: 0 1px 2px 0 rgba(36, 50, 66, 0.15);
+    background-color: #FFF;
   }
 
   .main_nav {
@@ -40,7 +41,8 @@
     border-radius: 2px;
     color: #FFF;
     padding: 5px 16px;
-    background-image: linear-gradient(167deg, #09C6F9 0%, #045DE9 74%);
+    background: #7767ff;
+    // background-image: linear-gradient(167deg, #09C6F9 0%, #045DE9 74%);
 
   }
 
