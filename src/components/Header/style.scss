@@ -1,0 +1,56 @@
+:local {
+  .header {
+    font-size: 14px;
+    font-weight: 700;
+
+    width: 100%;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        padding-right: 16px;
+      }
+    }
+
+    position: fixed;
+    box-shadow: 0 1px 2px 0 rgba(36, 50, 66, 0.15);
+  }
+
+  .main_nav {
+    margin-left: 16px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-right: 32px;
+  }
+
+  .contact {
+    border-radius: 2px;
+    color: #FFF;
+    padding: 5px 16px;
+    background-image: linear-gradient(167deg, #09C6F9 0%, #045DE9 74%);
+
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-height: 32px;
+      margin-right: 8px;
+    }
+  }
+}
