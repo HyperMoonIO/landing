@@ -6,6 +6,7 @@ import TextLine from "./components/TextLine";
 import Features from "./components/Features";
 import TypeOfProjects from "./components/TypeOfProjects";
 import Services from "./components/Services";
+import Contact from "./components/Contact";
 
 const Home = () => (
   <Fragment>
@@ -30,6 +31,7 @@ const Home = () => (
     <Features />
     <TypeOfProjects />
     <Services />
+    <Contact />
   </Fragment>
 );
 
