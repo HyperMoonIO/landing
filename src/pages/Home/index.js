@@ -7,6 +7,7 @@ import Features from "./components/Features";
 import TypeOfProjects from "./components/TypeOfProjects";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Customers from "./components/Customers";
 
 const Home = () => (
   <Fragment>
@@ -31,6 +32,8 @@ const Home = () => (
     <Features />
     <TypeOfProjects />
     <Services />
+    <Customers />
+    <TextLine>Performance</TextLine>
     <Contact />
   </Fragment>
 );

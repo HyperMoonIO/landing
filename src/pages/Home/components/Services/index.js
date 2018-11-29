@@ -8,8 +8,8 @@ import logoWand from "src/assets/icons/wand.svg";
 import styles from "./style.scss";
 
 const Services = () => (
-  <div className={styles.container}>
-    <h3>Tous nos services</h3>
+  <div id="services" className={styles.container}>
+    <h3>Nos services</h3>
     <ul>
       <li>
         <img src={logoSuivi} alt="suivi" />

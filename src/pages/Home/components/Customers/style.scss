@@ -1,0 +1,46 @@
+:local {
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 150px 0 50px 0;
+
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 20px;
+    font-weight: 300;
+
+    img {
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 50px;
+      padding-bottom: 50px;
+    }
+    .bullet {
+      margin-top: 16px;
+      list-style-type: circle;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+
+      li {
+        text-align: center;
+        img {
+          height: 90px;
+          width: 90px;
+        }
+        p {
+          max-width: 150px;
+        }
+      }
+    }
+
+  }
+
+}

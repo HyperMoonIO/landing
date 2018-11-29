@@ -3,8 +3,6 @@ import React from "react";
 import logo from "./logo.jpg";
 import styles from "./style.scss";
 
-console.log("stylre", styles);
-
 const Header = () => (
   <header className={styles.header}>
     <div className={styles.logo}>
@@ -13,12 +11,22 @@ const Header = () => (
     </div>
     <nav className={styles.main_nav}>
       <ul>
-        <li>Services</li>
-        <li>Projets</li>
-        <li>Clients</li>
-        <li>Tarifs</li>
+        <li>
+          <a href="/#services">Services</a>
+        </li>
+        <li>
+          <a href="/projets">Projets</a>
+        </li>
+        <li>
+          <a href="/#clients">Clients</a>
+        </li>
+        <li>
+          <a href="/#tarifs">Tarifs</a>
+        </li>
       </ul>
-      <div className={styles.contact}>Contact</div>
+      <div className={styles.contact}>
+        <a href="/#contact">Contact</a>
+      </div>
     </nav>
   </header>
 );
