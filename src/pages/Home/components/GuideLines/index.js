@@ -1,9 +1,9 @@
 import React from "react";
 
-import logoSuivi from "src/assets/icons/suivi.svg";
-import logoPerf from "src/assets/icons/perf.svg";
-import logoSeo from "src/assets/icons/seo.svg";
-import logoWand from "src/assets/icons/wand.svg";
+import logoTrust from "src/assets/icons/trust.svg";
+import logoListen from "src/assets/icons/listen.svg";
+import logoTransparency from "src/assets/icons/transparency.svg";
+import logoRelation from "src/assets/icons/relationship.svg";
 
 import styles from "./style.scss";
 
@@ -15,7 +15,7 @@ const GuideLines = () => (
         <li className={styles.value}>
           <h4>Confiance</h4>
           <div className={styles.flex}>
-            <img src={logoSuivi} alt="suivi" />
+            <img src={logoTrust} alt="honnêteté" />
             <p>
               On est <b>honnête</b> à propos de ce que l'on fait et on ira droit
               au but avec vous. On n'acceptera pas un projet qu'on ne pourra pas{" "}
@@ -31,13 +31,13 @@ const GuideLines = () => (
               honnête dans nos réponses,{" "}
               <b>même si cela vient à vous déplaire</b>.
             </p>
-            <img src={logoSuivi} alt="suivi" />
+            <img src={logoListen} alt="écoute" />
           </div>
         </li>
         <li className={styles.value}>
-          <h4>Transparent</h4>
+          <h4>Transparence</h4>
           <div className={styles.flex}>
-            <img src={logoSuivi} alt="suivi" />
+            <img src={logoTransparency} alt="transparence" />
             <p>
               On sait que l'informatique peut paraitre compliqué vu de
               l'extérieur, mais nous nous efforcerons toujours à garder{" "}
@@ -60,7 +60,7 @@ const GuideLines = () => (
               puissions vous suivre tout au long de la vie de votre projet ou
               entreprise.
             </p>
-            <img src={logoSuivi} alt="suivi" />
+            <img src={logoRelation} alt="relationship" />
           </div>
         </li>
       </ul>

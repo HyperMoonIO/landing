@@ -23,13 +23,18 @@
       padding-bottom: 50px;
     }
     .bullet {
-      margin-top: 16px;
-      list-style-type: circle;
+      margin-top: 42px;
+      text-align: center;
+      li {
+        margin: 0 auto;
+      }
+
+      display: flex;
+      flex-direction: column;
     }
     ul {
       display: flex;
       justify-content: space-between;
-
 
       li {
         text-align: center;
@@ -39,6 +44,7 @@
         }
         p {
           max-width: 150px;
+          font-size: 21px;
         }
       }
     }
