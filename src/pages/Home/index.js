@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Customers from "./components/Customers";
 import Pricing from "./components/Pricing";
+import GuideLines from "./components/GuideLines";
 
 const Home = () => (
   <Fragment>
@@ -28,13 +29,18 @@ const Home = () => (
         <div className={styles.image} />
       </div>
       <div className="clr" />
-      <TextLine>Mais attendez..</TextLine>
     </div>
+    <TextLine>Mais attendez..</TextLine>
     <Features />
-    <TypeOfProjects />
-    <Services />
-    <Pricing />
+    <TextLine>Et c'est pour qui ?</TextLine>
     <Customers />
+    <TypeOfProjects />
+    <TextLine>Concrètement vous faites quoi ?</TextLine>
+    <Services />
+    <TextLine>Et à quel prix ?</TextLine>
+    <Pricing />
+    <TextLine>Pourquoi vous ?</TextLine>
+    <GuideLines />
     <TextLine>No bullshit</TextLine>
     <Contact />
   </Fragment>
