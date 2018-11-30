@@ -31,10 +31,10 @@ const Customers = () => (
         <img src={logoSuivi} alt="suivi" />
         <p>
           .. jusqu'a la <b>PME</b>
-          <ul className={styles.bullet}>
-            <li>Redstun</li>
-          </ul>
         </p>
+        <ul className={styles.bullet}>
+          <li>Redstun</li>
+        </ul>
       </li>
     </ul>
   </div>

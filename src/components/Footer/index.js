@@ -46,6 +46,8 @@ const Footer = () => (
         <li>
           <a href="tel:+33785281484">(+33) 7 85 28 14 84</a>
         </li>
+        <li>Siret 82909448100019</li>
+        <li>Siren 829 094 481</li>
       </ul>
       <ul className={styles.nav}>
         <h4>Réseaux sociaux</h4>

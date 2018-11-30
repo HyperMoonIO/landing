@@ -1,9 +1,11 @@
 import React from "react";
 
-import logoSuivi from "src/assets/icons/suivi.svg";
-import logoPerf from "src/assets/icons/perf.svg";
+import logoWebsite from "src/assets/icons/website.svg";
+import logoHosting from "src/assets/icons/hosting.svg";
+import logoWise from "src/assets/icons/wise.svg";
+import logoMobile from "src/assets/icons/mobile.svg";
 import logoSeo from "src/assets/icons/seo.svg";
-import logoWand from "src/assets/icons/wand.svg";
+import logoLearning from "src/assets/icons/learning.svg";
 
 import styles from "./style.scss";
 
@@ -12,57 +14,51 @@ const Services = () => (
     <h3>Nos services</h3>
     <ul>
       <li>
-        <img src={logoSuivi} alt="suivi" />
+        <img src={logoWebsite} alt="suivi" />
         <p>
-          <b>Un suivi</b> tout au long de votre projet
+          <b>Développement WEB</b>
+          <br />
+          Site vitrine, ecommerce, projet innovant
         </p>
       </li>
       <li>
-        <img src={logoPerf} alt="suivi" />
+        <img src={logoHosting} alt="suivi" />
         <p>
-          Un projet <b>performant</b>
+          <b>Hébergement &amp; Nom de domaine</b>
+          <br />
+          Gestion et/ou mise en place
         </p>
       </li>
       <li>
-        <img src={logoSeo} alt="suivi" />
+        <img src={logoWise} alt="suivi" />
         <p>
-          Une meilleure <b>visibilité</b> pour dépasser votre concurrence
+          <b>Audit / Conseils</b>
+          <br />
+          Profitez de notre expérience
         </p>
       </li>
       <li>
-        <img src={logoWand} alt="suivi" />
+        <img src={logoMobile} alt="suivi" />
         <p>
-          Quelque chose <b>à votre image</b>, dans votre <b>budget</b>
-        </p>
-      </li>{" "}
-      <li>
-        <img src={logoSuivi} alt="suivi" />
-        <p>
-          <b>Un suivi</b> tout au long de votre projet
-        </p>
-      </li>
-      <li>
-        <img src={logoPerf} alt="suivi" />
-        <p>
-          Un projet <b>performant</b>
+          <b>Application Mobile</b>
+          <br />
+          Hybdride : Android / iOS
         </p>
       </li>
       <li>
         <img src={logoSeo} alt="suivi" />
         <p>
-          Une meilleure <b>visibilité</b> pour dépasser votre concurrence
+          <b>SEO &amp; Réferencement</b>
+          <br />
+          Pour améliorer votre visibilité
         </p>
       </li>
       <li>
-        <img src={logoWand} alt="suivi" />
+        <img src={logoLearning} alt="suivi" />
         <p>
-          Quelque chose <b>à votre image</b>, dans votre <b>budget</b>
-        </p>
-      </li>
-      <li>
-        <img src={logoWand} alt="suivi" />
-        <p>
-          Quelque chose <b>à votre image</b>, dans votre <b>budget</b>
+          <b>Formation</b>
+          <br />
+          Ne soyez plus dans le flou !
         </p>
       </li>
     </ul>

@@ -8,6 +8,7 @@ import TypeOfProjects from "./components/TypeOfProjects";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Customers from "./components/Customers";
+import Pricing from "./components/Pricing";
 
 const Home = () => (
   <Fragment>
@@ -27,13 +28,14 @@ const Home = () => (
         <div className={styles.image} />
       </div>
       <div className="clr" />
+      <TextLine>Mais attendez..</TextLine>
     </div>
-    <TextLine>Performance</TextLine>
     <Features />
     <TypeOfProjects />
     <Services />
+    <Pricing />
     <Customers />
-    <TextLine>Performance</TextLine>
+    <TextLine>No bullshit</TextLine>
     <Contact />
   </Fragment>
 );
