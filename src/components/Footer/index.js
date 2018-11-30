@@ -1,5 +1,7 @@
 import React from "react";
 
+import iconSpaceLander from "src/assets/icons/space-lander.svg";
+
 import styles from "./style.scss";
 
 const links = [
@@ -12,6 +14,11 @@ const links = [
 
 const Footer = () => (
   <footer className={styles.footer}>
+    <img
+      src={iconSpaceLander}
+      alt="space-lander"
+      className={styles.space_lander}
+    />
     <div className={styles.container}>
       <ul className={styles.nav}>
         <h4>HyperMoon</h4>

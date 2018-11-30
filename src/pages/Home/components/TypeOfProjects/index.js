@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 
-import logoSuivi from "src/assets/icons/suivi.svg";
+import logo1 from "src/assets/icons/jupiter-white.svg";
+import logo2 from "src/assets/icons/mars-white.svg";
+import logo3 from "src/assets/icons/moon-white.svg";
 
 import styles from "./style.scss";
 
@@ -20,15 +22,15 @@ const TypeOfProjects = () => (
         </div>
         <ul className={styles.tech}>
           <li>
-            <img src={logoSuivi} alt="suivi" />
+            <img src={logo1} alt="suivi" />
             <p>Consulting</p>
           </li>
           <li>
-            <img src={logoSuivi} alt="suivi" />
+            <img src={logo2} alt="suivi" />
             <p>Site Internet</p>
           </li>
           <li>
-            <img src={logoSuivi} alt="suivi" />
+            <img src={logo3} alt="suivi" />
             <p>Application Mobile</p>
           </li>
         </ul>

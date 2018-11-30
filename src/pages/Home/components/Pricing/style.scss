@@ -1,7 +1,18 @@
 :local {
   .container {
     margin: 100px auto;
+    overflow: hidden;
+    position: relative;
 
+    background: url(../../../../assets/icons/invaders.svg);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position-x: 32px;
+    background-position-y: 500px;
+
+    @media (max-width: 1100px) {
+      background: none;
+    }
     .tva {
       color: #747c80;
       font-size: 14px;
@@ -26,6 +37,16 @@
       box-shadow: 0px 0px 5px #DDD;
       width: 350px;
 
+      .bcolor1 {
+        background: linear-gradient(to right, #380036 , #0CBABA);
+        height: 6px;
+        border-radius: 4px 4px 0 0;
+      }
+      .bcolor2 {
+        background: linear-gradient(to right, #0CBABA, #380036);
+        height: 6px;
+        border-radius: 4px 4px 0 0;
+      }
 
       h3 {
         text-align: center;

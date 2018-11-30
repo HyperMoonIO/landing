@@ -3,11 +3,12 @@ import React from "react";
 import s from "./style.scss";
 
 const Pricing = () => (
-  <div id="contact" className={s.container}>
+  <div id="tarifs" className={s.container}>
     <h3>Tarifs</h3>
     <div className={s.products}>
       {/* websites */}
       <div className={s.product}>
+        <div className={s.bcolor1} />
         <h3>Web</h3>
         <div className={s.pricing}>
           <div className={s.pfrom}>à partir de</div>
@@ -25,6 +26,7 @@ const Pricing = () => (
       </div>
       {/* audit */}
       <div className={s.product}>
+        <div className={s.bcolor2} />
         <h3>Consulting</h3>
         <div className={s.pricing}>
           <div className={s.pnumber}>49</div>
