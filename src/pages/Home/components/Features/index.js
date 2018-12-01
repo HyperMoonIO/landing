@@ -9,7 +9,7 @@ import styles from "./style.scss";
 
 const Features = () => (
   <div className={styles.container}>
-    <h3>..qu'avez vous avec HyperMoon ?</h3>
+    <h3>Qu'avez-vous avec HyperMoon ?</h3>
     <ul>
       <li>
         <img src={logoSuivi} alt="suivi" />

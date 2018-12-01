@@ -30,7 +30,6 @@ const Home = () => (
       </div>
       <div className="clr" />
     </div>
-    <TextLine>Mais attendez..</TextLine>
     <Features />
     <TextLine>Et c'est pour qui ?</TextLine>
     <Customers />

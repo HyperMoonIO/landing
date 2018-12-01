@@ -8,7 +8,7 @@ import logoRelation from "src/assets/icons/relationship.svg";
 import styles from "./style.scss";
 
 const GuideLines = () => (
-  <div className={styles.background}>
+  <div id="nos-valeurs" className={styles.background}>
     <div className={styles.container}>
       <h3>Nos valeurs</h3>
       <ul>
@@ -27,8 +27,8 @@ const GuideLines = () => (
           <h4>À votre écoute</h4>
           <div className={styles.flex}>
             <p>
-              On sera ravi d'entendre vos idées mais nous serons toujours
-              honnête dans nos réponses,{" "}
+              On sera ravi d'entendre vos idées, mais nous serons toujours
+              honnêtes dans nos réponses,{" "}
               <b>même si cela vient à vous déplaire</b>.
             </p>
             <img src={logoListen} alt="écoute" />
@@ -44,8 +44,8 @@ const GuideLines = () => (
               <b>un discours compréhensible pour vous</b>.<br />
               Exit les : <br />
               <i>
-                - "Non mais vous comprenez à cause du protocol TLS et de la
-                contenairisation des images Docker cela justifie 200e de plus."
+                - "Non mais vous comprenez à cause du protocole TLS et de la
+                containérisation des images Docker cela justifie 200e de plus."
               </i>
               <br />
               <i>- "euh pardon?"</i>
@@ -56,7 +56,7 @@ const GuideLines = () => (
           <h4>Une vraie relation</h4>
           <div className={styles.flex}>
             <p>
-              Nous esperons surtout que vous ferez de même avec nous et que nous
+              Nous espérons surtout que vous ferez de même avec nous et que nous
               puissions vous suivre tout au long de la vie de votre projet ou
               entreprise.
             </p>

@@ -42,13 +42,13 @@ const Services = () => (
         <p>
           <b>Application Mobile</b>
           <br />
-          Hybdride : Android / iOS
+          Hybride : Android / iOS
         </p>
       </li>
       <li>
         <img src={logoSeo} alt="suivi" />
         <p>
-          <b>SEO &amp; Réferencement</b>
+          <b>SEO &amp; Référencement</b>
           <br />
           Pour améliorer votre visibilité
         </p>
