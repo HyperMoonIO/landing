@@ -16,6 +16,7 @@
 
     @media (max-width: 1100px) {
       background: none;
+      width: 100%;
     }
 
     h3 {
@@ -28,6 +29,10 @@
     ul {
       display: flex;
       flex-wrap: wrap;
+
+      @media (max-width: 1100px) {
+        align-content: center;
+      }
 
       li {
         display: flex;
@@ -43,7 +48,9 @@
 
         padding: 16px;
         margin: 20px 25px;
-
+        @media (max-width: 1100px) {
+          margin: 20px auto;
+        }
         &:hover {
           border: 1px solid #564787;
         }

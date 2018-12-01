@@ -3,7 +3,6 @@
   .container {
     padding: 200px 0 200px;
     background: #ee4554;
-    // background: linear-gradient(to bottom right, #ee4554, #b553a9);
     background: linear-gradient(to bottom right, #564787, #101935);
 
     color: #FFF;
@@ -17,8 +16,16 @@
       justify-content: space-between;
       align-items: center;
 
+      @media (max-width: 1100px) {
+        display: block;
+      }
+
       .text {
         width: 50%;
+        @media (max-width: 1100px) {
+          width: 100%;
+          margin-bottom: 50px;
+        }
 
         h3 {
           text-align: center;
@@ -37,6 +44,10 @@
 
       .tech {
         width: 50%;
+        @media (max-width: 1100px) {
+          width: 100%;
+          align-content: center;
+        }
 
         img {
           max-height: 64px;
