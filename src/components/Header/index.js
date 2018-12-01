@@ -15,26 +15,37 @@ class Header extends Component {
   render() {
     const { menuIsOpen } = this.state;
 
-    const menuContent = (
+    const menuContent = isMobile => (
       <React.Fragment>
         <ul>
           <li>
-            <a href="/#clients">Clients</a>
+            <a onClick={isMobile ? this.toggleMenu : null} href="/#clients">
+              Clients
+            </a>
           </li>
           <li>
-            <a href="/#services">Services</a>
+            <a onClick={isMobile ? this.toggleMenu : null} href="/#services">
+              Services
+            </a>
           </li>
           <li>
-            <a href="/#tarifs">Tarifs</a>
+            <a onClick={isMobile ? this.toggleMenu : null} href="/#tarifs">
+              Tarifs
+            </a>
           </li>
           <li>
-            <a href="/#nos-valeurs">Valeurs</a>
+            <a onClick={isMobile ? this.toggleMenu : null} href="/#nos-valeurs">
+              Valeurs
+            </a>
           </li>
           {/*<li>
       <a href="/projets">Projets</a>
     </li>*/}
         </ul>
-        <div className={styles.contact}>
+        <div
+          onClick={isMobile ? this.toggleMenu : null}
+          className={styles.contact}
+        >
           <a href="/#contact">Contact</a>
         </div>
       </React.Fragment>
@@ -50,12 +61,12 @@ class Header extends Component {
             HyperMoon
           </div>
         </a>
-        <nav className={styles.main_nav}>{menuContent}</nav>
+        <nav className={styles.main_nav}>{menuContent(false)}</nav>
         <nav
           className={styles.mobile_nav}
           style={{ display: menuIsOpen ? "block" : "none" }}
         >
-          {menuContent}
+          {menuContent(true)}
         </nav>
       </header>
     );
