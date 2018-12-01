@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 import s from "./style.scss";
 
@@ -6,7 +7,11 @@ const initialState = {
   name: "",
   email: "",
   phone: "",
-  message: ""
+  message: "",
+
+  error: null,
+  disabled: false,
+  success: null
 };
 
 class ContactForm extends Component {
@@ -17,12 +22,45 @@ class ContactForm extends Component {
   };
 
   send = async () => {
+    if (this.state.disabled) return;
+    this.setState({ error: null, disabled: true });
     // TODO actually send the message
-    this.setState({ ...initialState });
+    // this.setState({ ...initialState });
+    const GENERIC_E =
+      "Une erreur est survenue : contactez-nous directement sur aksels.ledins@gmail.com";
+    await axios
+      .post("/contact", this.state)
+      .then(() => {
+        this.setState({ ...initialState, success: "Message envoyé!" });
+      })
+      .catch(error => {
+        if (error.response) {
+          if (error.response.status !== 422) {
+            this.setState({ error: GENERIC_E, disabled: false });
+            return;
+          }
+          this.setState({
+            error: `Formulaire invalide : ${error.response.data.errors
+              .map(i => i.msg)
+              .join(", ")}`,
+            disabled: false
+          });
+        } else {
+          this.setState({ error: GENERIC_E, disabled: false });
+        }
+      });
   };
 
   render() {
-    const { name, email, phone, message } = this.state;
+    const {
+      name,
+      email,
+      phone,
+      message,
+      error,
+      disabled,
+      success
+    } = this.state;
 
     return (
       <div className={s.container}>
@@ -53,7 +91,11 @@ class ContactForm extends Component {
           rows="4"
           value={message}
         />
-        <button onClick={this.send}>Envoyer</button>
+        <button onClick={this.send} disabled={disabled}>
+          Envoyer
+        </button>
+        {error && <p>Erreur : {error}</p>}
+        {success && <p>{success}</p>}
       </div>
     );
   }
