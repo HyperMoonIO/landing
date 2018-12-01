@@ -1,0 +1,53 @@
+:local {
+
+
+  .background {
+    background: url(../../../../assets/icons/solar-system.svg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: left -50px bottom;
+
+    @media (max-width: 1100px) {
+      background: none;
+    }
+  }
+
+  .container {
+    width: 600px;
+    margin: 0 auto;
+
+    @media (max-width: 1100px) {
+      width: 80%;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 50px;
+      padding-bottom: 50px;
+    }
+    h4 {
+      text-align: center;
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 300;
+      padding-bottom: 16px;
+    }
+
+    .value {
+      margin-bottom: 75px;
+
+      .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          margin: 0px 50px;
+        }
+      }
+    }
+  }
+
+}

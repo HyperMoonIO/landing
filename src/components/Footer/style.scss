@@ -1,0 +1,59 @@
+:local {
+  .footer {
+    position: relative;
+    background: #101935;
+    color: #FFF;
+
+    font-size: 16px;
+    overflow-y: hidden;
+
+    h4 {
+      font-size: #dbcbd8;
+      margin-bottom: 32px;
+    }
+
+    .container {
+      width: 1000px;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: row;
+
+      padding: 100px 0;
+
+      @media (max-width: 1100px) {
+        flex-direction: column;
+        padding-left: 32px;
+
+        ul {
+          width: 100%;
+          margin-bottom: 32px;
+        }
+      }
+      ul {
+        width: 250px;
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+      padding: 16px 0;
+      font-weight: 300;
+    }
+
+    .space_lander {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      right: 46px;
+      bottom: -12px;
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+:local {
+
+  .hero {
+    margin: 0 auto;
+    padding: 100px 0 10px 0;
+    width: 1000px;
+
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+  }
+
+  .intro {
+    float: left;
+    width: 60%;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 55px;
+      line-height: 100px;
+      padding-bottom: 32px;
+
+      color: #142127;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 50px;
+    }
+  }
+
+  .intro_image {
+    @media (max-width: 1100px) {
+      display: none;
+    }
+
+    float: right;
+    width: calc(40% - 64px);
+    height: 400px;
+    padding: 32px;
+
+    .image {
+      background: url('./illustration.svg') no-repeat 0px 0px;
+      background-size: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+}
