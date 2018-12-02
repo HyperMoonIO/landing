@@ -10,5 +10,9 @@ Landing of <a href="https://hypermoon.io">hypermoon.io</a>
 <br /><br />
 <br /><br />
 
+## Performance
+![screenshot](./com/performance.png)
+
+
 ## Preview
 ![screenshot](./com/screen.png)
