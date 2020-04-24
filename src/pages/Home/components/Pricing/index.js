@@ -12,7 +12,7 @@ const Pricing = () => (
         <h3>Web</h3>
         <div className={s.pricing}>
           <div className={s.pfrom}>à partir de</div>
-          <div className={s.pnumber}>749</div>
+          <div className={s.pnumber}>750</div>
           <div className={s.peuro}>€</div>
         </div>
         <div className={s.pricing_desc}>Site vitrine, site e-commerce</div>
@@ -29,7 +29,7 @@ const Pricing = () => (
         <div className={s.bcolor2} />
         <h3>Consulting</h3>
         <div className={s.pricing}>
-          <div className={s.pnumber}>49</div>
+          <div className={s.pnumber}>50</div>
           <div className={s.peuro}>€/h</div>
         </div>
         <div className={s.pricing_desc}>Besoin d'un coup de main?</div>
