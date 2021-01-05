@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "compression": "^1.7.3",
     "express": "^4.16.4",
     "express-validator": "^5.3.0",
